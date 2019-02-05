@@ -8,9 +8,26 @@ export function getTodos() {
         .then(todos => todos.map(todo => ({
             id: todo.id,
             title: todo.title,
-            description: todo.description
+            description: todo.description,
+            completed: todo.completed,
+            progress: todo.progress,
         })))
 }
+
+export function getTodo(id) {
+    return fetch(`${url}/${id}`)
+        .then(response => response.json())
+        .then(todo => {
+            return {
+                id: todo.id,
+                title: todo.title,
+                description: todo.description,
+                completed: todo.completed,
+                progress: todo.progress,
+            }
+        })
+}
+
 
 export function saveToDo(todo) {
     return fetch(`${url}/post`, {
@@ -22,8 +39,8 @@ export function saveToDo(todo) {
             'content-type': 'application/json'
         },
     })
-    .then(res => res.json())
-    .catch(error => console.error('Error:', error));
+        .then(res => res.json())
+        .catch(error => console.error('Error:', error));
 }
 export function editTodo(todo) {
     return fetch(`${url}/${todo.id}`, {
@@ -35,10 +52,10 @@ export function editTodo(todo) {
             'content-type': 'application/json'
         },
     })
-    .then(res => res.json())
-    .catch(error => console.error('Error:', error));
+        .then(res => res.json())
+        .catch(error => console.error('Error:', error));
 }
-export function deleteToDo(todo){
+export function deleteToDo(todo) {
     return fetch(`${url}/${todo}`, {
         method: 'DELETE',
         cache: 'no-cache',
@@ -47,7 +64,7 @@ export function deleteToDo(todo){
             'content-type': 'application/json'
         },
     })
-    .then(res => res.json())
-    .catch(error => console.error('Error:', error));
+        .then(res => res.json())
+        .catch(error => console.error('Error:', error));
 }
 

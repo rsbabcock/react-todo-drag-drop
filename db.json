@@ -1,24 +1,32 @@
 {
-    "todos": [
-        {
-            "id": 3,
-            "title": "Party",
-            "description": "Deelte"
-        },
-        {
-            "id": 5,
-            "title": "Eat more cheese",
-            "description": "Everyday"
-        },
-        {
-            "id": 6,
-            "title": "Eat more food",
-            "description": "Yea!"
-        },
-        {
-            "id": 7,
-            "title": "Fun Stuff",
-            "description": "Eat more food"
-        }
-    ]
+  "todos": [
+    {
+      "completed": false,
+      "description": "Deelte",
+      "id": 3,
+      "progress": "todo",
+      "title": "Party"
+    },
+    {
+      "completed": false,
+      "description": "Everyday",
+      "id": 5,
+      "progress": "todo",
+      "title": "Eat more cheese"
+    },
+    {
+      "completed": false,
+      "description": "Yea!",
+      "id": 6,
+      "progress": "todo",
+      "title": "Eat more food"
+    },
+    {
+      "completed": false,
+      "description": "Eat more food",
+      "id": 7,
+      "progress": "todo",
+      "title": "Fun Stuff"
+    }
+  ]
 }

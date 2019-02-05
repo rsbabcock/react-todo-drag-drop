@@ -1,0 +1,38 @@
+.app_wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.wrapper_todos{
+    border: solid 1px black;
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section{
+    height: 100%;
+    width: 30%;
+    margin: 2em 0 0 0;
+}
+/* card styling */
+.card_todo{
+    border: solid 1px black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card_todo>input{
+    align-self: left;
+    width: 32px;
+    height: 32px;
+}
+
+.card_details{
+    margin-left: 1em;
+    flex-grow: 1;
+}

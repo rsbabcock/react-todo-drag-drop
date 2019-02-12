@@ -27,7 +27,6 @@ export function getTodo(id) {
 }
 
 export function saveToDo(todo) {
-    console.log(todo)
     return fetch( url, {
         method: 'POST',
         body: JSON.stringify(todo),

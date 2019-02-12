@@ -1,5 +1,3 @@
-
-
 const url = 'http://localhost:3000/todos';
 
 export function getTodos() {
@@ -28,9 +26,9 @@ export function getTodo(id) {
         })
 }
 
-
 export function saveToDo(todo) {
-    return fetch(`${url}/post`, {
+    console.log(todo)
+    return fetch( url, {
         method: 'POST',
         body: JSON.stringify(todo),
         cache: 'no-cache',

@@ -2,31 +2,24 @@
   "todos": [
     {
       "completed": false,
-      "description": "Deelte",
-      "id": 3,
-      "progress": "todo",
-      "title": "Party"
-    },
-    {
-      "completed": false,
-      "description": "Everyday",
-      "id": 5,
-      "progress": "todo",
-      "title": "Eat more cheese"
-    },
-    {
-      "completed": false,
-      "description": "Yea!",
+      "description": "love a puppy",
       "id": 6,
       "progress": "todo",
-      "title": "Eat more food"
+      "title": "puppy"
     },
     {
       "completed": false,
-      "description": "Eat more food",
+      "description": "being silly!",
       "id": 7,
-      "progress": "todo",
-      "title": "Fun Stuff"
+      "progress": "doing",
+      "title": "stop"
+    },
+    {
+      "completed": false,
+      "description": "This bad boy is working",
+      "id": 8,
+      "progress": "done",
+      "title": "Howdy!"
     }
   ]
 }

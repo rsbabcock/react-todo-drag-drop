@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+To run the sass files :
+
+`sass --watch styles/main.scss:index.css`
+
 ## Available Scripts
 
 In the project directory, you can run:

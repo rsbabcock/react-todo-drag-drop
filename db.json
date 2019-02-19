@@ -3,9 +3,9 @@
     {
       "completed": false,
       "description": "Probably cheesecake",
+      "id": 1,
       "progress": "todo",
-      "title": "Make a cake",
-      "id": 1
+      "title": "Make a cake"
     },
     {
       "completed": false,

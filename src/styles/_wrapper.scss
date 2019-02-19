@@ -1,0 +1,9 @@
+@import './utils/flexbox';
+
+.app_wrapper{
+    @include flex-container(column wrap space-evenly center);
+}
+.wrapper_todos{
+    border: solid 1px black;
+    @include flex-container(row wrap space-evenly center 80vh 90vw);
+}

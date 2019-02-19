@@ -1,14 +1,47 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app_wrapper {
+  display: flex;
+  flex-flow: column wrap space-evenly center column wrap space-evenly center;
+  justify-content: column wrap space-evenly center;
+  align-items: column wrap space-evenly center;
+  height: column wrap space-evenly center;
+  width: column wrap space-evenly center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.wrapper_todos {
+  border: solid 1px black;
+  display: flex;
+  flex-flow: row wrap space-evenly center 80vh 90vw row wrap space-evenly center 80vh 90vw;
+  justify-content: row wrap space-evenly center 80vh 90vw;
+  align-items: row wrap space-evenly center 80vh 90vw;
+  height: row wrap space-evenly center 80vh 90vw;
+  width: row wrap space-evenly center 80vh 90vw;
 }
+
+section {
+  height: 100%;
+  width: 30%;
+  margin: 2em 0 0 0;
+}
+
+/* card styling */
+.card_todo {
+  border: solid 1px black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.close {
+  margin-left: 8px;
+  align-self: left;
+  width: 32px;
+  height: 32px;
+}
+
+.card_details {
+  margin-left: 1em;
+  flex-grow: 1;
+}
+
+/*# sourceMappingURL=index.css.map */

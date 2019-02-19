@@ -1,0 +1,9 @@
+// Accepts multiple arguments
+@mixin flex-container($args...){
+    display: flex;
+    flex-flow: $args $args;
+    justify-content: $args;
+    align-items: $args;
+    height: $args;
+    width: $args
+}

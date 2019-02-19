@@ -1,6 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-To run the sass files :
+1) After cloning run:
+
+`npm install`
+
+2) To run jsonServer for the faux database run:
+
+`json-server --watch db.json`
+
+     open localhost:3000/todos if you want to see on the browser what todo's you have
+    
+3) To run the sass files :
 
 `sass --watch styles/main.scss:index.css`
 
@@ -9,6 +19,8 @@ To run the sass files :
 In the project directory, you can run:
 
 ### `npm start`
+
+### since Json Server (db )runs on port 3000 the app needs to run on 3001
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

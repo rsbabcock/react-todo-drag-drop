@@ -1,9 +1,9 @@
 @import './utils/flexbox';
 
 .app_wrapper{
-    @include flex-container(column wrap space-evenly center);
+    @include flex-container(column, space-evenly, center, 100vh, 100vw);
 }
 .wrapper_todos{
     border: solid 1px black;
-    @include flex-container(row wrap space-evenly center 80vh 90vw);
+    @include flex-container(row, space-evenly, center, 80vh, 90vw);
 }

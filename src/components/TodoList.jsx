@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { getTodos, getTodo, editTodo, saveToDo, deleteToDo } from '../api/api'
 import Todo from './Todo'
 import TodoInput from './AddTodoInput'
-import './Todos.css'
+import '../index.css'
 
 export default class ToDoList extends Component {
     constructor() {

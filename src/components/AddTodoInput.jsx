@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import './Todos.css'
-
+import '../index.css'
 
 export default class TodoInput extends Component {
 

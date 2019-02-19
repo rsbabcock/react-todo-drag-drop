@@ -1,20 +1,20 @@
 .app_wrapper {
   display: flex;
-  flex-flow: column wrap space-evenly center column wrap space-evenly center;
-  justify-content: column wrap space-evenly center;
-  align-items: column wrap space-evenly center;
-  height: column wrap space-evenly center;
-  width: column wrap space-evenly center;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .wrapper_todos {
   border: solid 1px black;
   display: flex;
-  flex-flow: row wrap space-evenly center 80vh 90vw row wrap space-evenly center 80vh 90vw;
-  justify-content: row wrap space-evenly center 80vh 90vw;
-  align-items: row wrap space-evenly center 80vh 90vw;
-  height: row wrap space-evenly center 80vh 90vw;
-  width: row wrap space-evenly center 80vh 90vw;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80vh;
+  width: 90vw;
 }
 
 section {
@@ -30,6 +30,8 @@ section {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
+  height: auto;
+  width: auto;
 }
 
 .close {

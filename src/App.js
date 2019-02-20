@@ -17,14 +17,9 @@ class App extends Component {
     }
  }
   render() {
-    let themeChange;
-    if(this.state.theme === 'light'){
-      themeChange = 'Dark'
-    } else { themeChange = 'Light'}
     return (
       <div className={`theme-${this.state.theme}`} id="app">
-        <button onClick={this.handleThemeChange}>{`Go ${themeChange}`}</button>
-        <TodoList theme={this.state.theme}/>
+        <TodoList theme={this.state.theme} themeChange={this.handleThemeChange}/>
       </div>
     );
   }

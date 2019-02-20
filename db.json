@@ -3,14 +3,8 @@
     {
       "completed": false,
       "id": 1,
-      "progress": "done",
+      "progress": "todo",
       "title": "Make a cake"
-    },
-    {
-      "completed": false,
-      "id": 2,
-      "progress": "doing",
-      "title": "have fun"
     },
     {
       "completed": false,
@@ -21,7 +15,7 @@
     {
       "completed": false,
       "id": 4,
-      "progress": "todo",
+      "progress": "done",
       "title": "eat popcorn"
     },
     {

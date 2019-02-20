@@ -2,13 +2,10 @@
 @import './utils/themes';
 @import './utils/themify';
 
-body{
-    background-color: $tertiary-dark;
-}
 button{
     height: 2em;
     @include flex-container(column, space-evenly, center, 3em, 5em);
-    border-radius: 6px;
+    border-radius: $border-radius;
     margin: .5em;
     @include themify($themes){
         background-color: themed('tertiaryColor');
@@ -21,14 +18,17 @@ h1, h4, h6, p {
     }
 }
 .wrapper_app{
+    margin: -1em;
+    padding: 1em;
     height: 100vh;
     width: 100vw;
     @include themify($themes){
         background-color: themed('primaryColor');
     }
-    @include flex-container(column, space-evenly, center, 100vh, 100vw);
+    @include flex-container(column, space-evenly, center, 100vh, 100vw, null);
 }
 .wrapper_todos{
+    border-radius: $border-radius;
     @include flex-container(row, space-evenly, center, 80vh, 90vw);
     @include themify($themes){
         background-color: themed('secondaryColor');
@@ -49,8 +49,9 @@ span{
         background-color: themed('tertiaryColor');
         color: themed('textColor');
     }
-    @include flex-container(row, space-evenly, center, 8em, 95%);
+    @include flex-container(row, space-evenly, center, 4em, 95%);
     margin-top: .5em;
+    border-radius: $border-radius;
 }
 .close{
     margin-left: 8px;

@@ -83,8 +83,13 @@ export default class ToDoList extends Component {
         })
     }
     render() {
+        let themeChange;
+        if(this.props.theme === 'light'){
+          themeChange = 'Dark'
+        } else { themeChange = 'Light'}
         return (
                 <div className={`wrapper_app ${this.props.theme}`}>
+                <button onClick={this.props.themeChange}>{`Go ${themeChange}`}</button>
                     <h1>Todos</h1>
                     <TodoInput
                         title={this.state.title}

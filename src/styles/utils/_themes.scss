@@ -7,18 +7,22 @@ $primary-dark: #2a2a2a;
 $secondary-dark: darken($primary-dark, 10%) ;
 $tertiary-dark: lighten($primary-dark, 20%) ;
 
+$border-radius: 6px;
+
 
 $themes: (
     light: (
         primaryColor:  $primary-light,
         textColor: $primary-dark,
         secondaryColor: $secondary-light,
-        tertiaryColor: $tertiary-light
+        tertiaryColor: $tertiary-light,
+        gradient: radial-gradient($tertiary-light, $tertiary-dark),
     ),
     dark: (
         primaryColor: $primary-dark,
         textColor: $primary-light,
         secondaryColor: $secondary-dark,
-        tertiaryColor: $tertiary-dark
+        tertiaryColor: $tertiary-dark,
+        gradient: radial-gradient($tertiary-dark, $tertiary-light),
       ),
 )

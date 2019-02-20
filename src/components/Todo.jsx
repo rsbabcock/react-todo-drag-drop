@@ -15,7 +15,6 @@ export default class ToDo extends Component {
                 <FontAwesomeIcon icon="times" className='close' onClick={() => this.props.delete(todo.id)}/>
                 <div className="card_details">
                     <h4>{todo.title}</h4>
-                    <p>{todo.description}</p>
                 </div>
             </div>
         )

@@ -13,7 +13,6 @@ export default class ToDoList extends Component {
             done: [],
             currentTodo: {},
             title: '',
-            description: '',
             newTodoAdded: false
         };
     }
@@ -51,7 +50,6 @@ export default class ToDoList extends Component {
         const currentTodo = this.state.currentTodo
         const updatedTodo = {
             completed: currentTodo.completed,
-            description: currentTodo.description,
             id: currentTodo.id,
             progress: cat,
             title: currentTodo.title,
@@ -67,14 +65,13 @@ export default class ToDoList extends Component {
         } else {
             const newTodo = {
                 completed: false,
-                description: this.state.description,
                 progress: 'todo',
                 title: this.state.title
             }
             event.preventDefault();
             saveToDo(newTodo).then(() => {
                 this.componentDidMount()
-                this.setState({ newTodoAdded: true, title: '', description: '' })
+                this.setState({ newTodoAdded: true, title: ''})
             })
         }
     }
@@ -90,7 +87,6 @@ export default class ToDoList extends Component {
                 <h1>Todos</h1>
                 <TodoInput
                     title={this.state.title}
-                    description={this.state.description}
                     handleSubmit={this.handleSubmit}
                     handleChange={this.handleChange} />
                 <div className="wrapper_todos">
@@ -98,10 +94,12 @@ export default class ToDoList extends Component {
                         <h6>ToDo</h6>
                         {this.state.todo.map(todo => (<Todo key={todo.id} todo={todo} drag={this.draghandler} delete={this.handleDelete}/>))}
                     </section>
+                    <span/>
                     <section onDragOver={this.dragOverHandler} onDrop={() => this.dropHandler('doing')} className="column_doing">
                         <h6>Doing</h6>
                         {this.state.doing.map(todo => (<Todo key={todo.id} todo={todo} drag={this.draghandler} delete={this.handleDelete}/>))}
                     </section>
+                    <span/>
                     <section onDragOver={this.dragOverHandler} onDrop={() => this.dropHandler('done')} className="column_done">
                         <h6>Done</h6>
                         {this.state.done.map(todo => (<Todo key={todo.id} todo={todo} drag={this.draghandler} delete={this.handleDelete}/>))}

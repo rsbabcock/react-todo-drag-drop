@@ -1,14 +1,10 @@
 @import './utils/flexbox';
 
-section{
-    height: 100%;
-    width: 30%;
-    margin: 2em 0 0 0;
-}
 /* card styling */
 .card_todo{
     border: solid 1px black;
-    @include flex-container(row, space-evenly, center);
+    @include flex-container(row, space-evenly, center, 8em, 95%);
+    margin-top: .5em;
 }
 .close{
     margin-left: 8px;

@@ -4,30 +4,22 @@ import '../index.css'
 export default class TodoInput extends Component {
 
     render() {
-        const { title, description } = this.props;
+        const { title } = this.props;
         return (
             <form onSubmit={this.props.handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="title">Add Todo</label>
                     <input
                         type="text"
-                        placeholder="Title"
+                        placeholder="Add Todo"
                         className="form-control"
                         id="title"
                         value={title}
                         onChange={this.props.handleChange}
+                        onSubmit={this.props.handleSubmit}
                     />
-                    <input
-                        type="text"
-                        placeholder="Description"
-                        className="form-control"
-                        id="description"
-                        value={description}
-                        onChange={this.props.handleChange}
-                    />
-                    <button type="submit" className="btn_submit" onKeyPress={this.props.handleSubmit}>
+                    {/* <button type="submit" className="btn_submit" onKeyPress={this.props.handleSubmit}>
                         SAVE
-                      </button>
+                      </button> */}
                 </div>
             </form>
         );

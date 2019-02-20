@@ -2,24 +2,39 @@
   "todos": [
     {
       "completed": false,
-      "description": "Probably cheesecake",
       "id": 1,
-      "progress": "todo",
+      "progress": "done",
       "title": "Make a cake"
     },
     {
       "completed": false,
-      "description": "Always",
       "id": 2,
       "progress": "doing",
       "title": "have fun"
     },
     {
       "completed": false,
-      "description": "it's awesome!",
       "id": 3,
-      "progress": "done",
+      "progress": "todo",
       "title": "get married"
+    },
+    {
+      "completed": false,
+      "progress": "todo",
+      "title": "eat popcorn",
+      "id": 4
+    },
+    {
+      "completed": false,
+      "id": 7,
+      "progress": "doing",
+      "title": "puppy"
+    },
+    {
+      "completed": false,
+      "progress": "todo",
+      "title": "make tacos",
+      "id": 8
     }
   ]
 }

@@ -4,6 +4,14 @@
     @include flex-container(column, space-evenly, center, 100vh, 100vw);
 }
 .wrapper_todos{
-    border: solid 1px black;
     @include flex-container(row, space-evenly, center, 80vh, 90vw);
+}
+section{
+    @include flex-container(column, flex-start, center, 80vh, 30%, null);
+    overflow-x: scroll;
+    
+}
+span{
+    border-left: 1px solid gray;
+    height: 85%;
 }

@@ -1,4 +1,6 @@
 // Accepts multiple arguments
+// the variable with the colon: gives auto value to that variable so that when the mixin
+// is called it doesn't throw an error if that variable is not passed in
 @mixin flex-container($direction,  $justify, $align, $height: auto, $width: auto, $wrap: wrap){
     display: flex;
     flex-flow: $direction $wrap;

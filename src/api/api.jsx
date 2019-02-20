@@ -6,7 +6,6 @@ export function getTodos() {
         .then(todos => todos.map(todo => ({
             id: todo.id,
             title: todo.title,
-            description: todo.description,
             completed: todo.completed,
             progress: todo.progress,
         })))
@@ -19,7 +18,6 @@ export function getTodo(id) {
             return {
                 id: todo.id,
                 title: todo.title,
-                description: todo.description,
                 completed: todo.completed,
                 progress: todo.progress,
             }

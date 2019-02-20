@@ -10,6 +10,7 @@ select{
     @include themify($themes){
         background-color: themed('tertiaryColor');
         color: themed('textColor')
+        
     }
 }
 h1, h4, h6, p {

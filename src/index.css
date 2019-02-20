@@ -22,6 +22,19 @@ select {
   color: #e7d1e7;
 }
 
+.theme-light select::active {
+  background-color: white;
+  color: #2a2a2a;
+}
+.theme-dark select::active {
+  background-color: #5d5d5d;
+  color: #f1f1f1;
+}
+.theme-party select::active {
+  background-color: rgba(173, 94, 172, 0.8);
+  color: #e7d1e7;
+}
+
 .theme-light h1, .theme-light h4, .theme-light h6, .theme-light p {
   color: #2a2a2a;
 }

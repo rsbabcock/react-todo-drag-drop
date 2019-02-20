@@ -1,15 +1,37 @@
 @import './utils/flexbox';
-@import 'utils/variables';
+@import './utils/themes';
+@import './utils/themify';
 
 body{
-    background-color: $secondary;
+    background-color: black;
 }
-.app_wrapper{
+button{
+    height: 2em;
+    @include flex-container(column, space-evenly, center, 3em, 5em);
+    border-radius: 6px;
+    @include themify($themes){
+        background-color: themed('tertiaryColor');
+        color: themed('textColor')
+    }
+}
+h1, h4, h6, p {
+    @include themify($themes){
+        color: themed('textColor')
+    }
+}
+.wrapper_app{
+    height: 100vh;
+    width: 100vw;
+    @include themify($themes){
+        background-color: themed('primaryColor');
+    }
     @include flex-container(column, space-evenly, center, 100vh, 100vw);
 }
 .wrapper_todos{
-    background-color: $primary;
     @include flex-container(row, space-evenly, center, 80vh, 90vw);
+    @include themify($themes){
+        background-color: themed('secondaryColor');
+    }
 }
 section{
     @include flex-container(column, flex-start, center, 80vh, 30%, null);
@@ -19,4 +41,29 @@ section{
 span{
     border-left: 1px solid gray;
     height: 85%;
+}
+// card styling 
+.card_todo{
+    @include themify($themes) {
+        background-color: themed('tertiaryColor');
+        color: themed('textColor');
+    }
+    @include flex-container(row, space-evenly, center, 8em, 95%);
+    margin-top: .5em;
+}
+.close{
+    margin-left: 8px;
+    align-self: left;
+    width: 32px;
+    height: 32px;
+    @include themify($themes){
+        color: themed('textColor')
+    }
+}
+.card_details{
+    margin-left: 1em;
+    flex-grow: 1;  
+    @include themify($themes){
+        color: themed('textColor')
+    } 
 }

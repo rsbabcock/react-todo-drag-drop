@@ -1,0 +1,24 @@
+$primary-light: #f1f1f1 ;
+$secondary-light: darken($primary-light, 10%);
+$tertiary-light: lighten($primary-light, 20%) ;
+
+
+$primary-dark: #2a2a2a;
+$secondary-dark: darken($primary-dark, 10%) ;
+$tertiary-dark: lighten($primary-dark, 20%) ;
+
+
+$themes: (
+    light: (
+        primaryColor:  $primary-light,
+        textColor: $primary-dark,
+        secondaryColor: $secondary-light,
+        tertiaryColor: $tertiary-light
+    ),
+    dark: (
+        primaryColor: $primary-dark,
+        textColor: $primary-light,
+        secondaryColor: $secondary-dark,
+        tertiaryColor: $tertiary-dark
+      ),
+)

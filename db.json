@@ -3,7 +3,7 @@
     {
       "completed": false,
       "id": 1,
-      "progress": "done",
+      "progress": "todo",
       "title": "Make a cake"
     },
     {
@@ -20,9 +20,9 @@
     },
     {
       "completed": false,
-      "progress": "todo",
-      "title": "eat popcorn",
-      "id": 4
+      "id": 4,
+      "progress": "done",
+      "title": "eat popcorn"
     },
     {
       "completed": false,
@@ -32,9 +32,9 @@
     },
     {
       "completed": false,
-      "progress": "todo",
-      "title": "make tacos",
-      "id": 8
+      "id": 8,
+      "progress": "doing",
+      "title": "make tacos"
     }
   ]
 }

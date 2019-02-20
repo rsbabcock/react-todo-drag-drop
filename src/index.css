@@ -1,3 +1,7 @@
+body {
+  background-color: #bababa;
+}
+
 .app_wrapper {
   display: flex;
   flex-flow: column wrap;
@@ -8,6 +12,7 @@
 }
 
 .wrapper_todos {
+  background-color: lightgray;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -33,7 +38,7 @@ span {
 
 /* card styling */
 .card_todo {
-  border: solid 1px black;
+  background-color: white;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;

@@ -1,8 +1,9 @@
 @import './utils/flexbox';
+@import 'utils/variables';
 
 /* card styling */
 .card_todo{
-    border: solid 1px black;
+    background-color: $tertiary;
     @include flex-container(row, space-evenly, center, 8em, 95%);
     margin-top: .5em;
 }

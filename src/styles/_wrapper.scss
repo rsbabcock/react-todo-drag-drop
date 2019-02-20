@@ -1,9 +1,14 @@
 @import './utils/flexbox';
+@import 'utils/variables';
 
+body{
+    background-color: $secondary;
+}
 .app_wrapper{
     @include flex-container(column, space-evenly, center, 100vh, 100vw);
 }
 .wrapper_todos{
+    background-color: $primary;
     @include flex-container(row, space-evenly, center, 80vh, 90vw);
 }
 section{

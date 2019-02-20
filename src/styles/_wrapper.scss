@@ -2,9 +2,9 @@
 @import './utils/themes';
 @import './utils/themify';
 
-button{
+select{
     height: 2em;
-    @include flex-container(column, space-evenly, center, 3em, 5em);
+    @include flex-container(row, center, center, 2em, 10em);
     border-radius: $border-radius;
     margin: .5em;
     @include themify($themes){
@@ -54,7 +54,7 @@ span{
 }
 .close{
     margin-left: 8px;
-    align-self: left;
+    align-self: left;   
     width: 32px;
     height: 32px;
     @include themify($themes){

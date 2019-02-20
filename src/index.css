@@ -1,23 +1,23 @@
-button {
+select {
   height: 2em;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
-  height: 3em;
-  width: 5em;
+  height: 2em;
+  width: 10em;
   border-radius: 6px;
   margin: 0.5em;
 }
-.theme-light button {
+.theme-light select {
   background-color: white;
   color: #2a2a2a;
 }
-.theme-dark button {
+.theme-dark select {
   background-color: #5d5d5d;
   color: #f1f1f1;
 }
-.theme-party button {
+.theme-party select {
   background-color: rgba(173, 94, 172, 0.8);
   color: #e7d1e7;
 }

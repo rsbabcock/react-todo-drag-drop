@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #2a2a2a;
 }
 
 button {
@@ -11,6 +11,7 @@ button {
   height: 3em;
   width: 5em;
   border-radius: 6px;
+  margin: 0.5em;
 }
 .theme-light button {
   background-color: white;

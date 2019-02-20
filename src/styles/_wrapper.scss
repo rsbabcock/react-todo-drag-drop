@@ -3,12 +3,13 @@
 @import './utils/themify';
 
 body{
-    background-color: black;
+    background-color: $primary-dark;
 }
 button{
     height: 2em;
     @include flex-container(column, space-evenly, center, 3em, 5em);
     border-radius: 6px;
+    margin: .5em;
     @include themify($themes){
         background-color: themed('tertiaryColor');
         color: themed('textColor')

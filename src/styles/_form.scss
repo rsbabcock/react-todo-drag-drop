@@ -1,0 +1,23 @@
+@import './utils/flexbox';
+@import './utils/themes';
+@import './utils/themify';
+
+form {
+    @include flex-container(row, center, center, 3em, 90vw);
+}
+
+.form-group input{
+    @include flex-container(row, center, center, 2em, 90vw);
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 6px;
+    @include themify($themes){
+        background-color: themed('tertiaryColor');
+        color: themed('textColor');
+    }
+}
+input::placeholder {
+            @include themify($themes){
+                color: themed('textColor');
+            }
+        }

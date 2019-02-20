@@ -1,5 +1,5 @@
 body {
-  background-color: #2a2a2a;
+  background-color: #5d5d5d;
 }
 
 button {
@@ -115,6 +115,42 @@ span {
   color: #2a2a2a;
 }
 .theme-dark .card_details {
+  color: #f1f1f1;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 90vw;
+}
+
+.form-group input {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 90vw;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 6px;
+}
+.theme-light .form-group input {
+  background-color: white;
+  color: #2a2a2a;
+}
+.theme-dark .form-group input {
+  background-color: #5d5d5d;
+  color: #f1f1f1;
+}
+
+.theme-light input::placeholder {
+  color: #2a2a2a;
+}
+.theme-dark input::placeholder {
   color: #f1f1f1;
 }
 

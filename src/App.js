@@ -8,13 +8,8 @@ class App extends Component {
     theme: 'light'
   }
 
-  handleThemeChange = () => {
-    if(this.state.theme === 'light'){
-        this.setState({ theme: 'dark'})
-    } 
-    if(this.state.theme === 'dark'){
-        this.setState({ theme: 'light'})
-    }
+  handleThemeChange = (event) => {
+     this.setState({ theme: event.target.value})
  }
   render() {
     return (

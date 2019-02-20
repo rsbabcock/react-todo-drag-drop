@@ -14,7 +14,7 @@ export default class ToDoList extends Component {
             currentTodo: {},
             title: '',
             newTodoAdded: false,
-            theme: 'light'
+            value: ''
         };
     }
     componentDidMount() {
@@ -58,7 +58,12 @@ export default class ToDoList extends Component {
         editTodo(updatedTodo).then(() => this.componentDidMount())
     }
     handleChange = (event) => {
-        this.setState({ [event.target.id]: event.target.value });
+        if (event.target.id === '') {
+            this.setState({ value: event.target.value });
+            this.props.themeChange(event)
+        } else {
+            this.setState({ [event.target.id]: event.target.value })
+        }
     }
     handleSubmit = (event) => {
         if (this.state.newTodoAdded) {
@@ -83,35 +88,37 @@ export default class ToDoList extends Component {
         })
     }
     render() {
-        let themeChange;
-        if(this.props.theme === 'light'){
-          themeChange = 'Dark'
-        } else { themeChange = 'Light'}
         return (
-                <div className={`wrapper_app ${this.props.theme}`}>
-                <button onClick={this.props.themeChange}>{`Go ${themeChange}`}</button>
-                    <h1>Todos</h1>
-                    <TodoInput
-                        title={this.state.title}
-                        handleSubmit={this.handleSubmit}
-                        handleChange={this.handleChange} />
-                    <div className="wrapper_todos">
-                        <section onDragOver={this.dragOverHandler} onDrop={() => this.dropHandler('todo')} className="column_todo">
-                            <h4>ToDo</h4>
-                            {this.state.todo.map(todo => (<Todo key={todo.id} todo={todo} drag={this.draghandler} delete={this.handleDelete} />))}
-                        </section>
-                        <span />
-                        <section onDragOver={this.dragOverHandler} onDrop={() => this.dropHandler('doing')} className="column_doing">
-                            <h4>Doing</h4>
-                            {this.state.doing.map(todo => (<Todo key={todo.id} todo={todo} drag={this.draghandler} delete={this.handleDelete} />))}
-                        </section>
-                        <span />
-                        <section onDragOver={this.dragOverHandler} onDrop={() => this.dropHandler('done')} className="column_done">
-                            <h4>Done</h4>
-                            {this.state.done.map(todo => (<Todo key={todo.id} todo={todo} drag={this.draghandler} delete={this.handleDelete} />))}
-                        </section>
-                    </div>
-                </div >
+            <div className={`wrapper_app ${this.props.theme}`}>
+                <form>
+                    <select value={this.state.value} onChange={this.handleChange}>
+                        <option value="light">Light Theme</option>
+                        <option value="dark">Dark Theme</option>
+                        <option value="party">Party Theme</option>
+                    </select>
+                </form>
+                <h1>Todos</h1>
+                <TodoInput
+                    title={this.state.title}
+                    handleSubmit={this.handleSubmit}
+                    handleChange={this.handleChange} />
+                <div className="wrapper_todos">
+                    <section onDragOver={this.dragOverHandler} onDrop={() => this.dropHandler('todo')} className="column_todo">
+                        <h4>ToDo</h4>
+                        {this.state.todo.map(todo => (<Todo key={todo.id} todo={todo} drag={this.draghandler} delete={this.handleDelete} />))}
+                    </section>
+                    <span />
+                    <section onDragOver={this.dragOverHandler} onDrop={() => this.dropHandler('doing')} className="column_doing">
+                        <h4>Doing</h4>
+                        {this.state.doing.map(todo => (<Todo key={todo.id} todo={todo} drag={this.draghandler} delete={this.handleDelete} />))}
+                    </section>
+                    <span />
+                    <section onDragOver={this.dragOverHandler} onDrop={() => this.dropHandler('done')} className="column_done">
+                        <h4>Done</h4>
+                        {this.state.done.map(todo => (<Todo key={todo.id} todo={todo} drag={this.draghandler} delete={this.handleDelete} />))}
+                    </section>
+                </div>
+            </div >
         )
     }
 }

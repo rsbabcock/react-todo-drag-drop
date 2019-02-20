@@ -15,6 +15,7 @@ form {
         background-color: themed('tertiaryColor');
         color: themed('textColor');
     }
+    border: none;
 }
 input::placeholder {
             @include themify($themes){

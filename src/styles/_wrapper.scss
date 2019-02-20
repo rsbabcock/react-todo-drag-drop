@@ -23,16 +23,14 @@ h1, h4, h6, p {
     height: 100vh;
     width: 100vw;
     @include themify($themes){
-        background-color: themed('primaryColor');
+        background: themed('primaryColor');
+        background-image: themed('partyGradient');
     }
     @include flex-container(column, space-evenly, center, 100vh, 100vw, null);
 }
 .wrapper_todos{
     border-radius: $border-radius;
     @include flex-container(row, space-evenly, center, 80vh, 90vw);
-    @include themify($themes){
-        background-color: themed('secondaryColor');
-    }
 }
 section{
     @include flex-container(column, flex-start, center, 80vh, 30%, null);
@@ -48,10 +46,11 @@ span{
     @include themify($themes) {
         background-color: themed('tertiaryColor');
         color: themed('textColor');
+        box-shadow: themed('cardBoxShadow');
     }
-    @include flex-container(row, space-evenly, center, 4em, 95%);
-    margin-top: .5em;
     border-radius: $border-radius;
+    margin-top: .2em;
+    @include flex-container(row, space-evenly, center, 4em, 95%);
 }
 .close{
     margin-left: 8px;

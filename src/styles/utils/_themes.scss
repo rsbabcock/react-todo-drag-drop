@@ -1,7 +1,8 @@
 // light colors
-$primary-light: #f1f1f1 ;
+$primary-light: #f1f1f1;
 $secondary-light: darken($primary-light, 10%);
-$tertiary-light: lighten($primary-light, 20%) ;
+$tertiary-light: lighten($primary-light, 20%);
+$primary-accent: #91E8FF;
 
 // dark colors
 $primary-dark: #2a2a2a;
@@ -11,7 +12,7 @@ $tertiary-dark: lighten($primary-dark, 20%) ;
 // party colors
 $primary-party: #9a1757;
 $secondary-party: #560d39;
-$tertiary-party: transparentize(#ad5eac, .2);
+$tertiary-party: transparentize(#ad5eac, .8);
 $extra-party: darken(#330f53, .6);
 $text-party: #e7d1e7;
 
@@ -25,7 +26,7 @@ $themes: (
         primaryColor:  $primary-light,
         textColor: $primary-dark,
         secondaryColor: $secondary-light,
-        tertiaryColor: $tertiary-light,
+        tertiaryColor: $primary-accent,
         gradient: radial-gradient($tertiary-light, $tertiary-dark),
         cardBoxShadow: .5px .5px .5px .5px $tertiary-dark,
     ),

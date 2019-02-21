@@ -39,7 +39,9 @@ section{
     
 }
 span{
-    border-left: 1px solid gray;
+    @include themify($themes) {
+        border-left: 1px solid themed('tertiaryColor');
+    }
     height: 85%;
 }
 // card styling 
@@ -47,7 +49,7 @@ span{
     @include themify($themes) {
         background-color: themed('tertiaryColor');
         color: themed('textColor');
-        box-shadow: themed('cardBoxShadow');
+        // box-shadow: themed('cardBoxShadow');
     }
     border-radius: $border-radius;
     margin-top: .2em;

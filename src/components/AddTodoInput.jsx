@@ -17,9 +17,6 @@ export default class TodoInput extends Component {
                         onChange={this.props.handleChange}
                         onSubmit={this.props.handleSubmit}
                     />
-                    {/* <button type="submit" className="btn_submit" onKeyPress={this.props.handleSubmit}>
-                        SAVE
-                      </button> */}
                 </div>
             </form>
         );

@@ -9,7 +9,7 @@
     {
       "completed": false,
       "id": 3,
-      "progress": "done",
+      "progress": "doing",
       "title": "get married"
     },
     {
@@ -21,7 +21,7 @@
     {
       "completed": false,
       "id": 7,
-      "progress": "todo",
+      "progress": "doing",
       "title": "puppy"
     },
     {

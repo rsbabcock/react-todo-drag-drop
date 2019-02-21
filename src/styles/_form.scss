@@ -7,7 +7,7 @@ form {
 }
 
 .form-group input{
-    @include flex-container(row, center, center, 2em, 90vw);
+    @include flex-container(row, center, center, 3em, 90vw);
     text-align: center;
     font-weight: bolder;
     border-radius: 6px;

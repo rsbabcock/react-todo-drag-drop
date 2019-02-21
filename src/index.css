@@ -10,7 +10,7 @@ select {
   margin: 0.5em;
 }
 .theme-light select {
-  background-color: white;
+  background-color: #91E8FF;
   color: #2a2a2a;
 }
 .theme-dark select {
@@ -18,20 +18,7 @@ select {
   color: #f1f1f1;
 }
 .theme-party select {
-  background-color: rgba(173, 94, 172, 0.8);
-  color: #e7d1e7;
-}
-
-.theme-light select::active {
-  background-color: white;
-  color: #2a2a2a;
-}
-.theme-dark select::active {
-  background-color: #5d5d5d;
-  color: #f1f1f1;
-}
-.theme-party select::active {
-  background-color: rgba(173, 94, 172, 0.8);
+  background-color: rgba(173, 94, 172, 0.2);
   color: #e7d1e7;
 }
 
@@ -89,8 +76,16 @@ section {
 }
 
 span {
-  border-left: 1px solid gray;
   height: 85%;
+}
+.theme-light span {
+  border-left: 1px solid #91E8FF;
+}
+.theme-dark span {
+  border-left: 1px solid #5d5d5d;
+}
+.theme-party span {
+  border-left: 1px solid rgba(173, 94, 172, 0.2);
 }
 
 .card_todo {
@@ -104,19 +99,16 @@ span {
   width: 95%;
 }
 .theme-light .card_todo {
-  background-color: white;
+  background-color: #91E8FF;
   color: #2a2a2a;
-  box-shadow: 0.5px 0.5px 0.5px 0.5px #5d5d5d;
 }
 .theme-dark .card_todo {
   background-color: #5d5d5d;
   color: #f1f1f1;
-  box-shadow: 0.5px 0.5px 0.5px 0.5px white;
 }
 .theme-party .card_todo {
-  background-color: rgba(173, 94, 172, 0.8);
+  background-color: rgba(173, 94, 172, 0.2);
   color: #e7d1e7;
-  box-shadow: 0.5px 0.5px 0.5px 0.5px #310f50;
 }
 
 .close {
@@ -163,7 +155,7 @@ form {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  height: 2em;
+  height: 3em;
   width: 90vw;
   text-align: center;
   font-weight: bolder;
@@ -171,7 +163,7 @@ form {
   border: none;
 }
 .theme-light .form-group input {
-  background-color: white;
+  background-color: #91E8FF;
   color: #2a2a2a;
 }
 .theme-dark .form-group input {
@@ -179,7 +171,7 @@ form {
   color: #f1f1f1;
 }
 .theme-party .form-group input {
-  background-color: rgba(173, 94, 172, 0.8);
+  background-color: rgba(173, 94, 172, 0.2);
   color: #e7d1e7;
 }
 

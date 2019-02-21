@@ -2,7 +2,7 @@
 $primary-light: #f1f1f1;
 $secondary-light: darken($primary-light, 10%);
 $tertiary-light: lighten($primary-light, 20%);
-$primary-accent: #91E8FF;
+$primary-accent: transparentize(#91E8FF, .6);
 
 // dark colors
 $primary-dark: #2a2a2a;

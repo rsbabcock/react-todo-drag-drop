@@ -9,19 +9,19 @@
     {
       "completed": false,
       "id": 3,
-      "progress": "doing",
+      "progress": "done",
       "title": "get married"
     },
     {
       "completed": false,
       "id": 4,
-      "progress": "done",
+      "progress": "doing",
       "title": "eat popcorn"
     },
     {
       "completed": false,
       "id": 7,
-      "progress": "doing",
+      "progress": "todo",
       "title": "puppy"
     },
     {

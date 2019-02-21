@@ -10,7 +10,7 @@ select {
   margin: 0.5em;
 }
 .theme-light select {
-  background-color: #91E8FF;
+  background-color: rgba(145, 232, 255, 0.4);
   color: #2a2a2a;
 }
 .theme-dark select {
@@ -79,7 +79,7 @@ span {
   height: 85%;
 }
 .theme-light span {
-  border-left: 1px solid #91E8FF;
+  border-left: 1px solid rgba(145, 232, 255, 0.4);
 }
 .theme-dark span {
   border-left: 1px solid #5d5d5d;
@@ -99,7 +99,7 @@ span {
   width: 95%;
 }
 .theme-light .card_todo {
-  background-color: #91E8FF;
+  background-color: rgba(145, 232, 255, 0.4);
   color: #2a2a2a;
 }
 .theme-dark .card_todo {
@@ -163,7 +163,7 @@ form {
   border: none;
 }
 .theme-light .form-group input {
-  background-color: #91E8FF;
+  background-color: rgba(145, 232, 255, 0.4);
   color: #2a2a2a;
 }
 .theme-dark .form-group input {
